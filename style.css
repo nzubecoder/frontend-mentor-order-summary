@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "outfit", sans-serif;
+    font-size: 16px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    min-height: 100vh;
+    position: relative;
+}
+.container{
+    max-width: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.test{
+    padding: 7%;
+    text-align: center;
+}
+.tittle{
+   color: hsl(223, 47%, 23%);
+   font-weight: 900;
+   font-size: 32px;
+   margin-bottom: 20px;
+}
+.mimi{
+    color: #8a8a8a;
+    margin-bottom: 25px;
+}
+.plain-test{
+   background-color: hsl(225, 100%, 98%);
+   border-radius: 12px;
+   display: flex;
+   padding: 25px;
+   align-items: center;
+   justify-content: space-between;
+}
+.plain-test-left{
+    display: flex;
+    align-items: center;
+    align-items: left;
+}
+.plain-test-left div {
+    margin-left: 20px;
+}
+.plain-test-left div h5{
+    font-weight: 900;
+    font-size: 16px;
+    color: hsl(223, 47%, 23%);
+}
+.plain-test-left div p{
+    font-weight: 900;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+.plain-test a{
+    font-weight: 900;
+    color:  hsl(245, 75%, 52%)
+}
+.sub button{
+    text-decoration: none;
+    color: white;
+   background-color: blue;
+   padding: 20px;
+    border: none;
+    border-radius: 10px;
+    left: 50%;
+    margin-top: 25px;
+    width: 100%;
+}
+.sub p{
+    margin-top: 15px;
+    color: #8a8a8a;;
+}
+/*mmedia query*/
+@media (max-width: 425px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    .container{
+        max-width: 87%;
+    }
+    .tittle{
+        font-size: 23px;
+    }
+    div.plain-test{
+        padding: 12px;
+    }
+    .plain-test-left div{
+        margin-left: 10px;
+    }
+}
